@@ -2,10 +2,13 @@
 
 import Link from 'next/link'
 import { Gamepad2, Twitter, MessageCircle, Send, Github, ChevronUp } from 'lucide-react'
-import { FOOTER_LINKS, SOCIAL_LINKS } from '@/lib/constants'
+import { SOCIAL_LINKS } from '@/lib/constants'
 import { scrollToTop } from '@/lib/utils'
+import { useTranslations } from 'next-intl'
 
 export default function Footer() {
+  const t = useTranslations('footer')
+  const tSite = useTranslations('site')
   return (
     <footer className="bg-deep-space border-t border-white/10 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -19,7 +22,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-white/60 leading-relaxed mb-6 max-w-sm">
-              Discover the best Play-to-Earn blockchain games. Your gateway to the Web3 gaming revolution.
+              {tSite('description')}
             </p>
             
             {/* Social Links */}
@@ -65,52 +68,94 @@ export default function Footer() {
 
           {/* Product Links */}
           <div>
-            <h3 className="font-mono text-sm font-semibold text-white mb-4">Product</h3>
+            <h3 className="font-mono text-sm font-semibold text-white mb-4">{t('product')}</h3>
             <ul className="space-y-3">
-              {FOOTER_LINKS.product.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-white/60 hover:text-white transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="/games"
+                  className="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  {t('game_catalog')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#featured"
+                  className="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  {t('featured_games')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/games#categories"
+                  className="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  {t('categories')}
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Resources Links */}
           <div>
-            <h3 className="font-mono text-sm font-semibold text-white mb-4">Resources</h3>
+            <h3 className="font-mono text-sm font-semibold text-white mb-4">{t('resources')}</h3>
             <ul className="space-y-3">
-              {FOOTER_LINKS.resources.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-white/60 hover:text-white transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="/#about"
+                  className="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  {t('about_gamefi')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#how-it-works"
+                  className="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  {t('how_it_works')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#faq"
+                  className="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  {t('faq')}
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Legal Links */}
           <div>
-            <h3 className="font-mono text-sm font-semibold text-white mb-4">Legal</h3>
+            <h3 className="font-mono text-sm font-semibold text-white mb-4">{t('legal')}</h3>
             <ul className="space-y-3">
-              {FOOTER_LINKS.legal.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-white/60 hover:text-white transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="/privacy"
+                  className="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  {t('privacy')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/terms"
+                  className="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  {t('terms')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/disclaimer"
+                  className="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  {t('disclaimer')}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -126,7 +171,7 @@ export default function Footer() {
             onClick={() => scrollToTop()}
             className="flex items-center gap-2 text-sm text-white/60 hover:text-white transition-colors group"
           >
-            <span>Back to Top</span>
+            <span>{t('back_to_top')}</span>
             <ChevronUp className="w-4 h-4 group-hover:-translate-y-1 transition-transform" />
           </button>
         </div>

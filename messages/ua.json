@@ -1,0 +1,159 @@
+{
+  "site": {
+    "title": "GameFI Каталог | Відкрийте найкращі блокчейн-ігри Play-to-Earn",
+    "description": "Досліджуйте найкращий каталог блокчейн-ігор Play-to-Earn. Знайдіть найкращі GameFI проєкти, порівнюйте DAU, блокчейни та платформи. Ваш шлях до Web3 ігор.",
+    "keywords": "GameFI, Play-to-Earn, P2E, блокчейн ігри, крипто ігри, Web3 ігри, NFT ігри, метавсесвіт"
+  },
+  "header": {
+    "logo": "GameFI",
+    "nav": {
+      "home": "Головна",
+      "catalog": "Каталог",
+      "about": "Про нас"
+    },
+    "cta": "Переглянути каталог"
+  },
+  "hero": {
+    "badge": "20+ відібраних ігор",
+    "title": "Відкрийте найкращі<br />Play-to-Earn ігри",
+    "description": "Досліджуйте найкращий каталог блокчейн-ігор. Порівнюйте DAU, блокчейни та платформи. Ваш шлях до революції Web3 ігор",
+    "cta1": "Дослідити каталог",
+    "cta2": "Рекомендовані ігри"
+  },
+  "stats": {
+    "title": "Ігор в каталозі",
+    "value": "20+",
+    "description": "Відібрані Play-to-Earn ігри",
+    "total_dau": "Загальна кількість щоденних користувачів",
+    "total_dau_value": "5.5M+",
+    "total_dau_desc": "Активні гравці по всьому світу",
+    "blockchains": "Блокчейни",
+    "blockchains_value": "14+",
+    "blockchains_desc": "Підтримувані мережі",
+    "free_to_play": "Безкоштовно",
+    "free_to_play_value": "85%",
+    "free_to_play_desc": "Не потрібна вхідна плата"
+  },
+  "featured": {
+    "title": "Рекомендовані ігри",
+    "description": "Відібрана колекція найпопулярніших та інноваційних Play-to-Earn ігор",
+    "cta": "Переглянути всі ігри"
+  },
+  "cta": {
+    "title": "Готові розпочати свою подорож у Web3 ігри?",
+    "description": "Досліджуйте 20+ ретельно відібраних Play-to-Earn ігор на різних блокчейнах та платформах",
+    "button": "Переглянути повний каталог"
+  },
+  "footer": {
+    "product": "Продукт",
+    "resources": "Ресурси",
+    "legal": "Юридична інформація",
+    "game_catalog": "Каталог ігор",
+    "featured_games": "Рекомендовані ігри",
+    "categories": "Категорії",
+    "about_gamefi": "Про GameFI",
+    "how_it_works": "Як це працює",
+    "faq": "FAQ",
+    "privacy": "Політика конфіденційності",
+    "terms": "Умови використання",
+    "disclaimer": "Відмова від відповідальності",
+    "back_to_top": "Наверх"
+  },
+  "games": {
+    "title": "Каталог ігор",
+    "description": "Перегляньте всі блокчейн-ігри Play-to-Earn",
+    "search_placeholder": "Пошук ігор...",
+    "filters": {
+      "category": "Категорія",
+      "blockchain": "Блокчейн",
+      "platform": "Платформа",
+      "all": "Всі"
+    },
+    "sort": {
+      "label": "Сортувати за",
+      "dau": "Щоденні активні користувачі",
+      "name": "Назва",
+      "newest": "Нові"
+    },
+    "no_results": "Ігор, що відповідають вашим критеріям, не знайдено.",
+    "try_adjusting": "Спробуйте змінити фільтри або пошукові запити."
+  },
+  "game_detail": {
+    "back": "Назад до каталогу",
+    "play_now": "Грати зараз",
+    "details": "Деталі гри",
+    "category": "Категорія",
+    "blockchain": "Блокчейн",
+    "platforms": "Платформи",
+    "dau": "Щоденні активні користувачі",
+    "free_to_play": "Безкоштовно",
+    "yes": "Так",
+    "no": "Ні",
+    "related": "Схожі ігри"
+  },
+  "categories": {
+    "Action RPG": "Action RPG",
+    "Auto-Battler": "Авто-батлер",
+    "Battle Royale": "Королівська битва",
+    "Collectible": "Колекційні",
+    "DeFi": "DeFi",
+    "Extraction Shooter": "Екстракційний шутер",
+    "Fantasy Sports": "Фентезійний спорт",
+    "Farming": "Фермерство",
+    "Fitness": "Фітнес",
+    "FPS": "FPS",
+    "Fully On-Chain": "Повністю в блокчейні",
+    "Idle": "Айдл",
+    "Lifestyle": "Спосіб життя",
+    "Metaverse": "Метавсесвіт",
+    "Mining": "Майнінг",
+    "MMO": "MMO",
+    "MMORPG": "MMORPG",
+    "Move-to-Earn": "Move-to-Earn",
+    "Multiplayer": "Мультиплеєр",
+    "Open World": "Відкритий світ",
+    "RPG": "RPG",
+    "Sci-Fi": "Наукова фантастика",
+    "Shooter": "Шутер",
+    "Simulation": "Сімулятор",
+    "Social": "Соціальні",
+    "Space Sim": "Космічний сімулятор",
+    "Strategy": "Стратегія",
+    "Tap-to-Earn": "Tap-to-Earn",
+    "TCG": "TCG",
+    "Turn-Based": "Похідна",
+    "UGC": "UGC"
+  },
+  "platforms": {
+    "Web": "Веб",
+    "PC": "ПК",
+    "Mac": "Mac",
+    "Mobile": "Мобільний",
+    "Mobile (Telegram)": "Мобільний (Telegram)",
+    "PS5": "PS5",
+    "Xbox": "Xbox"
+  },
+  "blockchains": {
+    "Avalanche": "Avalanche",
+    "Base": "Base",
+    "Ethereum": "Ethereum",
+    "Ethereum (Starkware)": "Ethereum (Starkware)",
+    "Hive": "Hive",
+    "Immutable X": "Immutable X",
+    "NEAR": "NEAR",
+    "Open Loot": "Open Loot",
+    "Polygon": "Polygon",
+    "Proof of Play (Apex)": "Proof of Play (Apex)",
+    "Ronin": "Ronin",
+    "SKALE": "SKALE",
+    "Solana": "Solana",
+    "TON": "TON",
+    "WAX": "WAX"
+  },
+  "language": {
+    "switcher": "Мова",
+    "en": "English",
+    "ua": "Українська",
+    "ru": "Русский"
+  }
+}

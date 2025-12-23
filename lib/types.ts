@@ -14,7 +14,13 @@ export interface Game {
   platforms: string[]
   is_f2p: boolean
   short_description: string
+  short_description_en: string
+  short_description_ua: string
+  short_description_ru: string
   long_description: string
+  long_description_en: string
+  long_description_ua: string
+  long_description_ru: string
   url: string
   logo: string
   slug?: string // Generated from name

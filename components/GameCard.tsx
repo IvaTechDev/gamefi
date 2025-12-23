@@ -1,12 +1,27 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { GameCardProps } from '@/lib/types'
 import { truncateText, parseDAU, formatNumber } from '@/lib/utils'
 import { Users, Globe, Check } from 'lucide-react'
+import { usePathname } from 'next/navigation'
 
 export default function GameCard({ game, featured = false, priority = false }: GameCardProps) {
+  const pathname = usePathname()
+  const locale = pathname.split('/')[1] || 'en'
+  
   const dau = parseDAU(game.est_dau)
   const formattedDAU = formatNumber(dau)
+  
+  // Get locale-specific description
+  const getDescription = () => {
+    switch (locale) {
+      case 'ua': return game.short_description_ua || game.short_description
+      case 'ru': return game.short_description_ru || game.short_description
+      default: return game.short_description
+    }
+  }
 
   return (
     <Link 
@@ -52,7 +67,7 @@ export default function GameCard({ game, featured = false, priority = false }: G
 
         {/* Description */}
         <p className="text-sm text-white/70 line-clamp-2 leading-relaxed">
-          {truncateText(game.short_description, 100)}
+          {truncateText(getDescription(), 100)}
         </p>
 
         {/* Categories */}

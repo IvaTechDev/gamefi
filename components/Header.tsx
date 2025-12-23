@@ -3,12 +3,15 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 import { Gamepad2, Menu, X } from 'lucide-react'
 import { NAV_LINKS } from '@/lib/constants'
+import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const pathname = usePathname()
+  const t = useTranslations('header')
 
   const isActive = (href: string) => {
     if (href === '/') return pathname === '/'
@@ -44,13 +47,16 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* CTA Button (Desktop) */}
-          <Link
-            href="/games"
-            className="hidden md:block btn-primary text-sm"
-          >
-            View Catalog
-          </Link>
+          {/* Right side - CTA and Language Switcher */}
+          <div className="hidden md:flex items-center gap-4">
+            <LanguageSwitcher />
+            <Link
+              href="/games"
+              className="btn-primary text-sm"
+            >
+              {t('cta')}
+            </Link>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -85,12 +91,15 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <div className="flex justify-center pt-4">
+              <LanguageSwitcher />
+            </div>
             <Link
               href="/games"
               onClick={() => setMobileMenuOpen(false)}
               className="block w-full text-center btn-primary"
             >
-              View Catalog
+              {t('cta')}
             </Link>
           </nav>
         </div>

@@ -1,0 +1,159 @@
+{
+  "site": {
+    "title": "GameFI Каталог | Откройте для себя лучшие блокчейн-игры Play-to-Earn",
+    "description": "Исследуйте лучший каталог блокчейн-игр Play-to-Earn. Найдите лучшие GameFI проекты, сравнивайте DAU, блокчейны и платформы. Ваш путь в мир Web3 игр.",
+    "keywords": "GameFI, Play-to-Earn, P2E, блокчейн игры, крипто игры, Web3 игры, NFT игры, метавселенная"
+  },
+  "header": {
+    "logo": "GameFI",
+    "nav": {
+      "home": "Главная",
+      "catalog": "Каталог",
+      "about": "О нас"
+    },
+    "cta": "Посмотреть каталог"
+  },
+  "hero": {
+    "badge": "20+ отобранных игр",
+    "title": "Откройте для себя лучшие<br />Play-to-Earn игры",
+    "description": "Исследуйте лучший каталог блокчейн-игр. Сравнивайте DAU, блокчейны и платформы. Ваш путь в революцию Web3 игр",
+    "cta1": "Исследовать каталог",
+    "cta2": "Рекомендуемые игры"
+  },
+  "stats": {
+    "title": "Игр в каталоге",
+    "value": "20+",
+    "description": "Отобранные Play-to-Earn игры",
+    "total_dau": "Всего ежедневных пользователей",
+    "total_dau_value": "5.5M+",
+    "total_dau_desc": "Активные игроки по всему миру",
+    "blockchains": "Блокчейны",
+    "blockchains_value": "14+",
+    "blockchains_desc": "Поддерживаемые сети",
+    "free_to_play": "Бесплатно",
+    "free_to_play_value": "85%",
+    "free_to_play_desc": "Не требуется входная плата"
+  },
+  "featured": {
+    "title": "Рекомендуемые игры",
+    "description": "Отобранная коллекция самых популярных и инновационных Play-to-Earn игр",
+    "cta": "Посмотреть все игры"
+  },
+  "cta": {
+    "title": "Готовы начать свое путешествие в Web3 игры?",
+    "description": "Исследуйте 20+ тщательно отобранных Play-to-Earn игр на различных блокчейнах и платформах",
+    "button": "Просмотреть полный каталог"
+  },
+  "footer": {
+    "product": "Продукт",
+    "resources": "Ресурсы",
+    "legal": "Юридическая информация",
+    "game_catalog": "Каталог игр",
+    "featured_games": "Рекомендуемые игры",
+    "categories": "Категории",
+    "about_gamefi": "О GameFI",
+    "how_it_works": "Как это работает",
+    "faq": "FAQ",
+    "privacy": "Политика конфиденциальности",
+    "terms": "Условия использования",
+    "disclaimer": "Отказ от ответственности",
+    "back_to_top": "Наверх"
+  },
+  "games": {
+    "title": "Каталог игр",
+    "description": "Просмотрите все блокчейн-игры Play-to-Earn",
+    "search_placeholder": "Поиск игр...",
+    "filters": {
+      "category": "Категория",
+      "blockchain": "Блокчейн",
+      "platform": "Платформа",
+      "all": "Все"
+    },
+    "sort": {
+      "label": "Сортировать по",
+      "dau": "Ежедневные активные пользователи",
+      "name": "Название",
+      "newest": "Новые"
+    },
+    "no_results": "Игр, соответствующих вашим критериям, не найдено.",
+    "try_adjusting": "Попробуйте изменить фильтры или поисковые запросы."
+  },
+  "game_detail": {
+    "back": "Назад к каталогу",
+    "play_now": "Играть сейчас",
+    "details": "Детали игры",
+    "category": "Категория",
+    "blockchain": "Блокчейн",
+    "platforms": "Платформы",
+    "dau": "Ежедневные активные пользователи",
+    "free_to_play": "Бесплатно",
+    "yes": "Да",
+    "no": "Нет",
+    "related": "Похожие игры"
+  },
+  "categories": {
+    "Action RPG": "Action RPG",
+    "Auto-Battler": "Авто-батлер",
+    "Battle Royale": "Королевская битва",
+    "Collectible": "Коллекционные",
+    "DeFi": "DeFi",
+    "Extraction Shooter": "Экстракционный шутер",
+    "Fantasy Sports": "Фэнтези спорт",
+    "Farming": "Фермерство",
+    "Fitness": "Фитнес",
+    "FPS": "FPS",
+    "Fully On-Chain": "Полностью в блокчейне",
+    "Idle": "Айдл",
+    "Lifestyle": "Образ жизни",
+    "Metaverse": "Метавселенная",
+    "Mining": "Майнинг",
+    "MMO": "MMO",
+    "MMORPG": "MMORPG",
+    "Move-to-Earn": "Move-to-Earn",
+    "Multiplayer": "Мультиплеер",
+    "Open World": "Открытый мир",
+    "RPG": "RPG",
+    "Sci-Fi": "Научная фантастика",
+    "Shooter": "Шутер",
+    "Simulation": "Симулятор",
+    "Social": "Социальные",
+    "Space Sim": "Космический симулятор",
+    "Strategy": "Стратегия",
+    "Tap-to-Earn": "Tap-to-Earn",
+    "TCG": "TCG",
+    "Turn-Based": "Походная",
+    "UGC": "UGC"
+  },
+  "platforms": {
+    "Web": "Веб",
+    "PC": "ПК",
+    "Mac": "Mac",
+    "Mobile": "Мобильный",
+    "Mobile (Telegram)": "Мобильный (Telegram)",
+    "PS5": "PS5",
+    "Xbox": "Xbox"
+  },
+  "blockchains": {
+    "Avalanche": "Avalanche",
+    "Base": "Base",
+    "Ethereum": "Ethereum",
+    "Ethereum (Starkware)": "Ethereum (Starkware)",
+    "Hive": "Hive",
+    "Immutable X": "Immutable X",
+    "NEAR": "NEAR",
+    "Open Loot": "Open Loot",
+    "Polygon": "Polygon",
+    "Proof of Play (Apex)": "Proof of Play (Apex)",
+    "Ronin": "Ronin",
+    "SKALE": "SKALE",
+    "Solana": "Solana",
+    "TON": "TON",
+    "WAX": "WAX"
+  },
+  "language": {
+    "switcher": "Язык",
+    "en": "English",
+    "ua": "Українська",
+    "ru": "Русский"
+  }
+}

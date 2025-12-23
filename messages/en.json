@@ -1,0 +1,159 @@
+{
+  "site": {
+    "title": "GameFI Catalog | Discover Top Play-to-Earn Blockchain Games",
+    "description": "Explore the ultimate catalog of Play-to-Earn blockchain games. Find the best GameFI projects, compare DAU, blockchains, and platforms. Your gateway to Web3 gaming.",
+    "keywords": "GameFI, Play-to-Earn, P2E, blockchain games, crypto games, Web3 gaming, NFT games, metaverse"
+  },
+  "header": {
+    "logo": "GameFI",
+    "nav": {
+      "home": "Home",
+      "catalog": "Catalog",
+      "about": "About"
+    },
+    "cta": "View Catalog"
+  },
+  "hero": {
+    "badge": "20+ Curated Games",
+    "title": "Discover the Best<br />Play-to-Earn Games",
+    "description": "Explore the ultimate catalog of blockchain games. Compare DAU, blockchains, and platforms. Your gateway to the Web3 gaming revolution",
+    "cta1": "Explore Catalog",
+    "cta2": "Featured Games"
+  },
+  "stats": {
+    "title": "Games Listed",
+    "value": "20+",
+    "description": "Curated Play-to-Earn games",
+    "total_dau": "Total Daily Users",
+    "total_dau_value": "5.5M+",
+    "total_dau_desc": "Active players worldwide",
+    "blockchains": "Blockchains",
+    "blockchains_value": "14+",
+    "blockchains_desc": "Supported networks",
+    "free_to_play": "Free-to-Play",
+    "free_to_play_value": "85%",
+    "free_to_play_desc": "No entry cost required"
+  },
+  "featured": {
+    "title": "Featured Games",
+    "description": "Hand-picked selection of the most popular and innovative Play-to-Earn games",
+    "cta": "View All Games"
+  },
+  "cta": {
+    "title": "Ready to Start Your Web3 Gaming Journey?",
+    "description": "Explore 20+ carefully curated Play-to-Earn games across multiple blockchains and platforms",
+    "button": "Browse Full Catalog"
+  },
+  "footer": {
+    "product": "Product",
+    "resources": "Resources",
+    "legal": "Legal",
+    "game_catalog": "Game Catalog",
+    "featured_games": "Featured Games",
+    "categories": "Categories",
+    "about_gamefi": "About GameFI",
+    "how_it_works": "How It Works",
+    "faq": "FAQ",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "disclaimer": "Disclaimer",
+    "back_to_top": "Back to Top"
+  },
+  "games": {
+    "title": "Game Catalog",
+    "description": "Browse all Play-to-Earn blockchain games",
+    "search_placeholder": "Search games...",
+    "filters": {
+      "category": "Category",
+      "blockchain": "Blockchain",
+      "platform": "Platform",
+      "all": "All"
+    },
+    "sort": {
+      "label": "Sort by",
+      "dau": "Daily Active Users",
+      "name": "Name",
+      "newest": "Newest"
+    },
+    "no_results": "No games found matching your criteria.",
+    "try_adjusting": "Try adjusting your filters or search terms."
+  },
+  "game_detail": {
+    "back": "Back to Catalog",
+    "play_now": "Play Now",
+    "details": "Game Details",
+    "category": "Category",
+    "blockchain": "Blockchain",
+    "platforms": "Platforms",
+    "dau": "Daily Active Users",
+    "free_to_play": "Free to Play",
+    "yes": "Yes",
+    "no": "No",
+    "related": "Related Games"
+  },
+  "categories": {
+    "Action RPG": "Action RPG",
+    "Auto-Battler": "Auto-Battler",
+    "Battle Royale": "Battle Royale",
+    "Collectible": "Collectible",
+    "DeFi": "DeFi",
+    "Extraction Shooter": "Extraction Shooter",
+    "Fantasy Sports": "Fantasy Sports",
+    "Farming": "Farming",
+    "Fitness": "Fitness",
+    "FPS": "FPS",
+    "Fully On-Chain": "Fully On-Chain",
+    "Idle": "Idle",
+    "Lifestyle": "Lifestyle",
+    "Metaverse": "Metaverse",
+    "Mining": "Mining",
+    "MMO": "MMO",
+    "MMORPG": "MMORPG",
+    "Move-to-Earn": "Move-to-Earn",
+    "Multiplayer": "Multiplayer",
+    "Open World": "Open World",
+    "RPG": "RPG",
+    "Sci-Fi": "Sci-Fi",
+    "Shooter": "Shooter",
+    "Simulation": "Simulation",
+    "Social": "Social",
+    "Space Sim": "Space Sim",
+    "Strategy": "Strategy",
+    "Tap-to-Earn": "Tap-to-Earn",
+    "TCG": "TCG",
+    "Turn-Based": "Turn-Based",
+    "UGC": "UGC"
+  },
+  "platforms": {
+    "Web": "Web",
+    "PC": "PC",
+    "Mac": "Mac",
+    "Mobile": "Mobile",
+    "Mobile (Telegram)": "Mobile (Telegram)",
+    "PS5": "PS5",
+    "Xbox": "Xbox"
+  },
+  "blockchains": {
+    "Avalanche": "Avalanche",
+    "Base": "Base",
+    "Ethereum": "Ethereum",
+    "Ethereum (Starkware)": "Ethereum (Starkware)",
+    "Hive": "Hive",
+    "Immutable X": "Immutable X",
+    "NEAR": "NEAR",
+    "Open Loot": "Open Loot",
+    "Polygon": "Polygon",
+    "Proof of Play (Apex)": "Proof of Play (Apex)",
+    "Ronin": "Ronin",
+    "SKALE": "SKALE",
+    "Solana": "Solana",
+    "TON": "TON",
+    "WAX": "WAX"
+  },
+  "language": {
+    "switcher": "Language",
+    "en": "English",
+    "ua": "Українська",
+    "ru": "Русский"
+  }
+}
