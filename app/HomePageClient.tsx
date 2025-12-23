@@ -216,10 +216,10 @@ export default function HomePageClient() {
             ref={descRef}
             className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            {t('hero.description').split('Web3 gaming revolution').map((part, index) => (
+            {t('hero.description').split('#').map((part, index) => (
               <span key={index}>
-                {part}
-                {index === 0 && <span className="text-digital-gold font-semibold">Web3 gaming revolution</span>}
+                {index === 0 && <span className=" font-semibold">{part}</span>}
+                {index !== 0 && <span className="text-digital-gold font-semibold">{part}</span>}
               </span>
             ))}
           </div>

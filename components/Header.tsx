@@ -5,13 +5,18 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { Gamepad2, Menu, X } from 'lucide-react'
-import { NAV_LINKS } from '@/lib/constants'
 import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const pathname = usePathname()
   const t = useTranslations('header')
+
+  const navLinks = [
+    { label: t('nav.home'), href: '/' },
+    { label: t('nav.catalog'), href: '/games' },
+    { label: t('nav.about'), href: '/#about' },
+  ]
 
   const isActive = (href: string) => {
     if (href === '/') return pathname === '/'
@@ -32,7 +37,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            {NAV_LINKS.map((link) => (
+            {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -77,7 +82,7 @@ export default function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-white/10 bg-cosmic-void/95 backdrop-blur-lg">
           <nav className="px-4 py-6 space-y-4">
-            {NAV_LINKS.map((link) => (
+            {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
