@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cosmic-void text-white font-body antialiased;
+  }
+}
+
+@layer components {
+  /* Glow effects */
+  .glow-orange {
+    @apply shadow-lg shadow-bitcoin-orange/20;
+  }
+  
+  .glow-gold {
+    @apply shadow-lg shadow-digital-gold/20;
+  }
+  
+  /* Card styling */
+  .card-gamefi {
+    @apply bg-deep-space/50 border border-white/10 rounded-2xl backdrop-blur-sm transition-all duration-300;
+  }
+  
+  .card-gamefi:hover {
+    @apply border-bitcoin-orange/50 -translate-y-1 glow-orange;
+  }
+  
+  /* Button base styles */
+  .btn-primary {
+    @apply px-6 py-3 rounded-full bg-gradient-to-r from-bitcoin-orange to-digital-gold text-cosmic-void font-semibold transition-all duration-300 hover:scale-105 glow-orange;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm text-white font-semibold transition-all duration-300 hover:bg-white/20 hover:border-white/30;
+  }
+  
+  .btn-ghost {
+    @apply px-6 py-3 rounded-full text-white/80 font-semibold transition-all duration-300 hover:text-white hover:bg-white/5;
+  }
+  
+  /* Input styling */
+  .input-gamefi {
+    @apply w-full px-4 py-3 bg-deep-space/50 border border-white/10 rounded-lg text-white placeholder:text-white/40 focus:outline-none focus:border-bitcoin-orange/50 focus:ring-1 focus:ring-bitcoin-orange/50 transition-all duration-200;
+  }
+  
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-bitcoin-orange to-digital-gold bg-clip-text text-transparent;
+  }
+  
+  /* Grid pattern background */
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+  }
+  
+  /* Glass morphism */
+  .glass-morphism {
+    @apply bg-deep-space/50 backdrop-blur-md border border-white/10;
+  }
+  
+  /* Glowing border animation */
+  @keyframes border-glow {
+    0%, 100% {
+      border-color: rgba(247, 147, 26, 0.3);
+      box-shadow: 0 0 10px rgba(247, 147, 26, 0.2);
+    }
+    50% {
+      border-color: rgba(247, 147, 26, 0.6);
+      box-shadow: 0 0 20px rgba(247, 147, 26, 0.4);
+    }
+  }
+  
+  .border-glow-animation {
+    animation: border-glow 2s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  /* Scrollbar styling */
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-track {
+    @apply bg-deep-space;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    @apply bg-white/20 rounded-full hover:bg-white/30;
+  }
+  
+  /* Text shadows for depth */
+  .text-shadow-glow {
+    text-shadow: 0 0 20px rgba(247, 147, 26, 0.5);
+  }
+  
+  .text-shadow-subtle {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Float animation for hero */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Pulse animation for badges */
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Performance optimization for animations */
+.will-change-transform {
+  will-change: transform, opacity;
+}
+
+/* GSAP animated elements */
+[data-gsap] {
+  will-change: transform, opacity;
+}
