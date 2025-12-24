@@ -81,7 +81,7 @@ export default function GamesPage() {
     <div className="min-h-screen">
       {/* Header Background */}
       <div className="h-64 bg-gradient-to-b from-deep-space to-cosmic-void border-b border-white/10 relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern opacity-30" />
+        <div className="absolute inset-0 bg-grid-pattern opacity-60" />
         <div className="absolute top-0 right-0 w-96 h-96 bg-bitcoin-orange/10 rounded-full blur-[120px]" />
       </div>
 

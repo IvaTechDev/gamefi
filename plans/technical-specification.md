@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://gamefi-catalog.pages.dev',
+    url: 'https://gamefi.ua',
     siteName: 'GameFI Catalog',
     title: 'GameFI Catalog | Discover Top Play-to-Earn Blockchain Games',
     description: 'Explore the ultimate catalog of Play-to-Earn blockchain games. Find the best GameFI projects, compare DAU, blockchains, and platforms.',
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     creator: '@gamefi_catalog',
   },
   alternates: {
-    canonical: 'https://gamefi-catalog.pages.dev',
+    canonical: 'https://gamefi.ua',
   },
 }
 ```
@@ -75,23 +75,23 @@ export const metadata: Metadata = {
 // app/games/page.tsx
 export const metadata: Metadata = {
   title: 'Game Catalog | Browse All Play-to-Earn Blockchain Games',
-  description: 'Browse 20+ top Play-to-Earn blockchain games. Filter by category, chain, platform. Find your next GameFI adventure with our comprehensive catalog.',
+  description: 'Browse 50+ top Play-to-Earn blockchain games. Filter by category, chain, platform. Find your next GameFI adventure with our comprehensive catalog.',
   keywords: 'game catalog, P2E games, blockchain games list, crypto games directory, GameFI catalog',
   openGraph: {
     type: 'website',
-    url: 'https://gamefi-catalog.pages.dev/games',
+    url: 'https://gamefi.ua/games',
     title: 'Game Catalog | Browse All Play-to-Earn Blockchain Games',
-    description: 'Browse 20+ top Play-to-Earn blockchain games. Filter by category, chain, platform.',
+    description: 'Browse 50+ top Play-to-Earn blockchain games. Filter by category, chain, platform.',
     images: ['/og-catalog.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Game Catalog | Browse All Play-to-Earn Blockchain Games',
-    description: 'Browse 20+ top Play-to-Earn blockchain games.',
+    description: 'Browse 50+ top Play-to-Earn blockchain games.',
     images: ['/twitter-catalog.png'],
   },
   alternates: {
-    canonical: 'https://gamefi-catalog.pages.dev/games',
+    canonical: 'https://gamefi.ua/games',
   },
 }
 ```
@@ -115,7 +115,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     keywords: `${game.name}, ${game.ticker}, ${game.category.join(', ')}, ${game.chain}, Play-to-Earn`,
     openGraph: {
       type: 'website',
-      url: `https://gamefi-catalog.pages.dev/games/${params.slug}`,
+      url: `https://gamefi.ua/games/${params.slug}`,
       title: `${game.name} (${game.ticker}) | Play-to-Earn Game on ${game.chain}`,
       description: game.short_description,
       images: [
@@ -134,7 +134,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       images: [game.logo || '/default-game-twitter.png'],
     },
     alternates: {
-      canonical: `https://gamefi-catalog.pages.dev/games/${params.slug}`,
+      canonical: `https://gamefi.ua/games/${params.slug}`,
     },
   }
 }
@@ -148,7 +148,7 @@ import { MetadataRoute } from 'next'
 import { getAllGames } from '@/lib/data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://gamefi-catalog.pages.dev'
+  const baseUrl = 'https://gamefi.ua'
   const games = getAllGames()
   
   // Static pages
@@ -186,7 +186,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://gamefi-catalog.pages.dev'
+  const baseUrl = 'https://gamefi.ua'
   
   return {
     rules: [
@@ -365,7 +365,7 @@ export const FEATURED_GAME_SLUGS = [
 export const STATS = [
   {
     label: 'Games Listed',
-    value: '20+',
+    value: '50+',
     icon: 'Gamepad2',
     description: 'Curated Play-to-Earn games',
   },

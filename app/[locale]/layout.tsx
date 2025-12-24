@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       type: 'website',
       locale: locale === 'en' ? 'en_US' : locale === 'ua' ? 'uk_UA' : 'ru_RU',
-      url: 'https://gamefi-catalog.pages.dev',
+      url: 'https://gamefi.ua',
       siteName: 'GameFI Catalog',
       title: t.title,
       description: t.description,
@@ -61,11 +61,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       creator: '@gamefi_catalog',
     },
     alternates: {
-      canonical: 'https://gamefi-catalog.pages.dev',
+      canonical: 'https://gamefi.ua',
       languages: {
-        'en': 'https://gamefi-catalog.pages.dev/en',
-        'uk': 'https://gamefi-catalog.pages.dev/ua',
-        'ru': 'https://gamefi-catalog.pages.dev/ru'
+        'en': 'https://gamefi.ua/en',
+        'uk': 'https://gamefi.ua/ua',
+        'ru': 'https://gamefi.ua/ru'
       }
     },
   }

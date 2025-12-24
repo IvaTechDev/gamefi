@@ -14,7 +14,7 @@
     "cta": "View Catalog"
   },
   "hero": {
-    "badge": "20+ Curated Games",
+    "badge": "50+ Curated Games",
     "title": "Discover the Best<br />Play-to-Earn Games",
     "description": "Explore the ultimate catalog of blockchain games. Compare DAU, blockchains, and platforms. Your gateway to the # Web3 gaming revolution",
     "cta1": "Explore Catalog",
@@ -22,7 +22,7 @@
   },
   "stats": {
     "title": "Games Listed",
-    "value": "20+",
+    "value": "50+",
     "description": "Curated Play-to-Earn games",
     "total_dau": "Total Daily Users",
     "total_dau_value": "5.5M+",
@@ -41,7 +41,7 @@
   },
   "cta": {
     "title": "Ready to Start Your Web3 Gaming Journey?",
-    "description": "Explore 20+ carefully curated Play-to-Earn games across multiple blockchains and platforms",
+    "description": "Explore 50+ carefully curated Play-to-Earn games across multiple blockchains and platforms",
     "button": "Browse Full Catalog"
   },
   "footer": {

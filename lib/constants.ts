@@ -95,7 +95,7 @@ export const FEATURED_GAME_SLUGS = [
 export const STATS = [
   {
     label: 'Games Listed',
-    value: '20+',
+    value: '50+',
     icon: 'Gamepad2',
     description: 'Curated Play-to-Earn games',
   },

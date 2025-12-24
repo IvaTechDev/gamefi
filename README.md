@@ -4,7 +4,7 @@ A modern, static Next.js website showcasing the best Play-to-Earn blockchain gam
 
 ## ✨ Features
 
-- **20+ Curated Games** - Hand-picked Play-to-Earn blockchain games
+- **50+ Curated Games** - Hand-picked Play-to-Earn blockchain games
 - **Advanced Filtering** - Filter by category, blockchain, platform, and F2P status
 - **Real-time Search** - Instant search with weighted relevance scoring
 - **Responsive Design** - Optimized for mobile, tablet, and desktop

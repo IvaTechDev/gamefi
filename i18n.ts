@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation'
 export const locales = ['en', 'ua', 'ru'] as const
 
 // Default locale
-export const defaultLocale = 'en' as const
+export const defaultLocale = 'ua' as const
 
 export type Locale = (typeof locales)[number]
 

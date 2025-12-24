@@ -218,7 +218,7 @@ The following constants are defined in `lib/constants.ts`:
 - **`BLOCKCHAINS`** - 14 supported networks (Ethereum, Ronin, TON, etc.)
 - **`PLATFORMS`** - 7 platforms (Web, PC, Mobile, consoles)
 - **`FEATURED_GAME_SLUGS`** - List of slugs for featured games on homepage
-- **`STATS`** - Statistics for homepage ticker (20+ games, 5.5M+ users, etc.)
+- **`STATS`** - Statistics for homepage ticker (50+ games, 5.5M+ users, etc.)
 - **`SOCIAL_LINKS`** - Social media links
 - **`NAV_LINKS`** / **`FOOTER_LINKS`** - Navigation links
 - **`CATEGORY_ICONS`** - Mapping of categories to Lucide icons

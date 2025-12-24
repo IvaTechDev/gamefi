@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "about",
+    "thumbnail": "/gamefi.png",
+    "pubdate": "2025-12-24 12:24:00",
+    "titles": {
+      "ua": "Про GameFi Hub",
+      "en": "About GameFi Hub",
+      "ru": "О GameFi Hub"
+    },
+    "descriptions": {
+      "ua": "Відкрийте для себе майбутнє ігор та фінансів. GameFi Hub — це ваш головний ресурс для блокчейн-ігор, можливостей play-to-earn та останніх новин Web3-геймінгу.",
+      "en": "Discover the future of gaming and finance. GameFi Hub is your premier destination for blockchain games, play-to-earn opportunities, and the latest Web3 gaming news.",
+      "ru": "Откройте для себя будущее игр и финансов. GameFi Hub — ваш главный ресурс для блокчейн-игр, возможностей play-to-earn и последних новостей Web3-гейминга."
+    },
+    "texts": {
+      "ua": "<h2>GameFi Hub: Ваше вікно у світ Web3-ігор</h2><p>GameFi Hub — це комплексна платформа, присвячена перетину геймінгу та децентралізованих фінансів. Наша місія — надати гравцям інструменти, знання та спільноту, необхідні для орієнтації у світі блокчейн-ігор, що швидко розвивається.</p><p>Ми віримо, що майбутнє ігор полягає у:</p><ul><li><b>Власності гравців:</b> Справжнє володіння ігровими активами через NFT.</li><li><b>Прозорій економіці:</b> Відкриті та чесні ігрові механіки на блокчейні.</li><li><b>Децентралізованому управлінні:</b> Можливість спільноти впливати на розвиток проектів.</li></ul><p>У GameFi Hub ми відбираємо найкращі ігри <i>play-to-earn</i>, пропонуємо детальні посібники та надаємо дані в реальному часі, щоб допомогти вам приймати обґрунтовані рішення у просторі Web3. Незалежно від того, чи ви досвідчений крипто-геймер, чи тільки починаєте свій шлях, GameFi Hub — ваш надійний партнер у метавсесвіті.</p>",
+      "en": "<h2>GameFi Hub: Your Gateway to Web3 Gaming</h2><p>GameFi Hub is a comprehensive platform dedicated to the intersection of gaming and decentralized finance. Our mission is to empower players by providing them with the tools, knowledge, and community needed to navigate the rapidly evolving world of blockchain gaming.</p><p>We believe that the future of gaming lies in:</p><ul><li><b>Player Ownership:</b> True ownership of in-game assets via NFTs.</li><li><b>Transparent Economies:</b> Open and fair game mechanics on the blockchain.</li><li><b>Decentralized Governance:</b> Community-driven project development.</li></ul><p>At GameFi Hub, we curate the best <i>play-to-earn</i> games, offer in-depth guides, and provide real-time data to help you make informed decisions in the Web3 space. Whether you are a seasoned crypto gamer or just starting your journey, GameFi Hub is your trusted partner in the metaverse.</p>",
+      "ru": "<h2>GameFi Hub: Ваше окно в мир Web3-игр</h2><p>GameFi Hub — это комплексная платформа, посвященная пересечению гейминга и децентрализованных финансов. Наша миссия — предоставить игрокам инструменты, знания и сообщество, необходимые для ориентации в быстро развивающемся мире блокчейн-игр.</p><p>Мы верим, что будущее игр заключается в:</p><ul><li><b>Собственности игроков:</b> Настоящее владение игровыми активами через NFT.</li><li><b>Прозрачной экономике:</b> Открытые и честные игровые механики на блокчейне.</li><li><b>Децентрализованном управлении:</b> Возможность сообщества влиять на развитие проектов.</li></ul><p>В GameFi Hub мы отбираем лучшие игры <i>play-to-earn</i>, предлагаем подробные руководства и предоставляем данные в реальном времени, чтобы помочь вам принимать обоснованные решения в пространстве Web3. Независимо от того, являетесь ли вы опытным крипто-геймером или только начинаете свой путь, GameFi Hub — ваш надежный партнер в метавселенной.</p>"
+    }
+  },
+  {
+    "slug": "buy_tokens",
+    "thumbnail": "/gamefi.png",
+    "pubdate": "2025-12-24 12:24:00",
+    "titles": {
+      "ua": "Як купити токени GameFi",
+      "en": "How to Buy GameFi Tokens",
+      "ru": "Как купить токены GameFi"
+    },
+    "descriptions": {
+      "ua": "Дізнайтеся, як придбати токени для ваших улюблених блокчейн-ігор. Наш посібник охоплює біржі, гаманці та безпечні методи купівлі для екосистеми GameFi.",
+      "en": "Learn how to acquire tokens for your favorite blockchain games. Our guide covers exchanges, wallets, and safe purchasing practices for the GameFi ecosystem.",
+      "ru": "Узнайте, как приобрести токены для ваших любимых блокчейн-игр. Наше руководство охватывает биржи, кошельки и безопасные методы покупки для экосистемы GameFi."
+    },
+    "texts": {
+      "ua": "<h2>Покроковий посібник з купівлі токенів</h2><p>Придбання токенів для проектів GameFi — це перший крок до участі в економіці play-to-earn. Ось як це зробити безпечно:</p><ol><li><b>Створіть гаманець:</b> Вам знадобиться цифровий гаманець, такий як <i>MetaMask</i> або <i>Phantom</i>.</li><li><b>Виберіть біржу:</b> Більшість токенів можна знайти на DEX (Uniswap, PancakeSwap) або CEX (Binance, Coinbase).</li><li><b>Перевірте контракт:</b> Завжди перевіряйте правильність адреси контракту на CoinMarketCap або CoinGecko.</li></ol><p>Завжди остерігайтеся шахраїв та ніколи не діліться своєю seed-фразою. GameFi Hub надає прямі посилання та перевірену інформацію, щоб ваш досвід купівлі був безпечним та ефективним.</p>",
+      "en": "<h2>Step-by-Step Guide to Buying Tokens</h2><p>Acquiring tokens for GameFi projects is the first step toward participating in play-to-earn economies. Here is how to do it safely:</p><ol><li><b>Set up a Wallet:</b> You will need a digital wallet like <i>MetaMask</i> or <i>Phantom</i>.</li><li><b>Choose an Exchange:</b> Most tokens can be found on DEXs (Uniswap, PancakeSwap) or CEXs (Binance, Coinbase).</li><li><b>Verify the Contract:</b> Always check the correct contract address on CoinMarketCap or CoinGecko.</li></ol><p>Always be wary of scams and never share your seed phrase. GameFi Hub provides direct links and verified information to ensure your purchasing experience is safe and efficient.</p>",
+      "ru": "<h2>Пошаговое руководство по покупке токенов</h2><p>Приобретение токенов для проектов GameFi — это первый шаг к участию в экономике play-to-earn. Вот как это сделать безопасно:</p><ol><li><b>Создайте кошелек:</b> Вам понадобится цифровой кошелек, такой как <i>MetaMask</i> или <i>Phantom</i>.</li><li><b>Выберите биржу:</b> Большинство токенов можно найти на DEX (Uniswap, PancakeSwap) или CEX (Binance, Coinbase).</li><li><b>Проверьте контракт:</b> Всегда проверяйте правильность адреса контракта на CoinMarketCap или CoinGecko.</li></ol><p>Всегда остерегайтесь мошенников и никогда не делитесь своей seed-фразой. GameFi Hub предоставляет прямые ссылки и проверенную информацию, чтобы ваш опыт покупки был безопасным и эффективным.</p>"
+    }
+  }
+]
