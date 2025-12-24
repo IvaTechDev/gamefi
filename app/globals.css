@@ -147,3 +147,20 @@
 [data-gsap] {
   will-change: transform, opacity;
 }
+
+main p {
+  margin: 1em 0;
+}
+main ul {
+  list-style: circle;
+  list-style-position: inside;
+  margin-left: 1em;
+}
+main ol {
+  list-style: decimal;
+  list-style-position: inside;
+  margin-left: 1em;
+}
+main li {
+  margin: 0.5em 0;
+}

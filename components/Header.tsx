@@ -15,7 +15,8 @@ export default function Header() {
   const navLinks = [
     { label: t('nav.home'), href: '/' },
     { label: t('nav.catalog'), href: '/games' },
-    { label: t('nav.about'), href: '/#about' },
+    { label: t('nav.about'), href: '/about' },
+    { label: t('nav.buy_tokens'), href: '/buy_tokens' },
   ]
 
   const isActive = (href: string) => {

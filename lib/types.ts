@@ -198,3 +198,15 @@ export type LoadingStateType =
   | 'search'             // Searching/filtering
   | 'pagination'         // Loading more results
   | 'related'            // Loading related games
+  
+  /**
+   * Static page interface from pages.json
+   */
+  export interface StaticPage {
+    slug: string
+    thumbnail: string
+    pubdate: string
+    titles: Record<string, string>
+    descriptions: Record<string, string>
+    texts: Record<string, string>
+  }

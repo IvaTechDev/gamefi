@@ -9,7 +9,8 @@
     "nav": {
       "home": "Home",
       "catalog": "Catalog",
-      "about": "About"
+      "about": "About",
+      "buy_tokens": "Buy Tokens"
     },
     "cta": "View Catalog"
   },
@@ -53,6 +54,7 @@
     "categories": "Categories",
     "about_gamefi": "About GameFI",
     "how_it_works": "How It Works",
+    "buy_tokens": "Buy Tokens",
     "faq": "FAQ",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",

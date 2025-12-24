@@ -103,10 +103,18 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/#about"
+                  href="/about"
                   className="text-sm text-white/60 hover:text-white transition-colors"
                 >
                   {t('about_gamefi')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/buy_tokens"
+                  className="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  {t('buy_tokens')}
                 </Link>
               </li>
               <li>

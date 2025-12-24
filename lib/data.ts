@@ -1,8 +1,9 @@
 // lib/data.ts
 
-import { Game } from './types'
+import { Game, StaticPage } from './types'
 import { addSlug } from './utils'
 import gamesData from '../games.json'
+import pagesData from '../pages.json'
 
 /**
  * Validate game object has required fields
@@ -77,4 +78,18 @@ export function getGamesByChain(chain: string): Game[] {
  */
 export function getFreeToPlayGames(): Game[] {
   return getAllGames().filter(game => game.is_f2p)
+}
+
+/**
+ * Get all static pages from pages.json
+ */
+export function getAllPages(): StaticPage[] {
+  return pagesData as StaticPage[]
+}
+
+/**
+ * Get a static page by its slug
+ */
+export function getPageBySlug(slug: string): StaticPage | undefined {
+  return getAllPages().find(page => page.slug === slug)
 }
