@@ -27,7 +27,7 @@ export default function ParticleNetwork({
 }: ParticleNetworkProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const particlesRef = useRef<Particle[]>([])
-  const animationIdRef = useRef<number | undefined>()
+  const animationIdRef = useRef<number | undefined>(undefined)
   const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {

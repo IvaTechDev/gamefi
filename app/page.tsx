@@ -1,5 +1,12 @@
-import HomePageClient from './HomePageClient'
+'use client'
 
-export default async function HomePage() {
+import dynamic from 'next/dynamic'
+
+const HomePageClient = dynamic(() => import('./HomePageClient'), {
+  ssr: false,
+  loading: () => <div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-bitcoin-orange"></div></div>
+})
+
+export default function HomePage() {
   return <HomePageClient />
 }
