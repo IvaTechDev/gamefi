@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { Gamepad2, Twitter, MessageCircle, Send, Github, ChevronUp } from 'lucide-react'
 import { SOCIAL_LINKS } from '@/lib/constants'
 import { scrollToTop } from '@/lib/utils'
@@ -9,13 +10,16 @@ import { useTranslations } from 'next-intl'
 export default function Footer() {
   const t = useTranslations('footer')
   const tSite = useTranslations('site')
+  const pathname = usePathname()
+  const locale = pathname.split('/')[1] || 'ua'
+  
   return (
     <footer className="bg-deep-space border-t border-white/10 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2 mb-4">
+            <Link href={`/${locale}`} className="flex items-center gap-2 mb-4">
               <Gamepad2 className="w-8 h-8 text-bitcoin-orange" />
               <span className="text-xl font-heading font-bold gradient-text">
                 GameFI
@@ -72,7 +76,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/games"
+                  href={`/${locale}/games`}
                   className="text-sm text-white/60 hover:text-white transition-colors"
                 >
                   {t('game_catalog')}
@@ -80,7 +84,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/#featured"
+                  href={`/${locale}#featured`}
                   className="text-sm text-white/60 hover:text-white transition-colors"
                 >
                   {t('featured_games')}
@@ -88,7 +92,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/games#categories"
+                  href={`/${locale}/games#categories`}
                   className="text-sm text-white/60 hover:text-white transition-colors"
                 >
                   {t('categories')}
@@ -103,7 +107,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/about"
+                  href={`/${locale}/about`}
                   className="text-sm text-white/60 hover:text-white transition-colors"
                 >
                   {t('about_gamefi')}
@@ -111,7 +115,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/buy_tokens"
+                  href={`/${locale}/buy_tokens`}
                   className="text-sm text-white/60 hover:text-white transition-colors"
                 >
                   {t('buy_tokens')}
@@ -119,7 +123,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/#how-it-works"
+                  href={`/${locale}#how-it-works`}
                   className="text-sm text-white/60 hover:text-white transition-colors"
                 >
                   {t('how_it_works')}
@@ -127,7 +131,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/#faq"
+                  href={`/${locale}#faq`}
                   className="text-sm text-white/60 hover:text-white transition-colors"
                 >
                   {t('faq')}
@@ -142,7 +146,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/privacy"
+                  href={`/${locale}/privacy`}
                   className="text-sm text-white/60 hover:text-white transition-colors"
                 >
                   {t('privacy')}
@@ -150,7 +154,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/terms"
+                  href={`/${locale}/terms`}
                   className="text-sm text-white/60 hover:text-white transition-colors"
                 >
                   {t('terms')}
@@ -158,7 +162,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/disclaimer"
+                  href={`/${locale}/disclaimer`}
                   className="text-sm text-white/60 hover:text-white transition-colors"
                 >
                   {t('disclaimer')}

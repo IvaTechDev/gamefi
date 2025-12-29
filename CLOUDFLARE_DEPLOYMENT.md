@@ -99,10 +99,12 @@ The site includes:
 - Check `package.json` for dependency issues
 - Run `npm install` before building
 
-### Pages Not Loading
+### Pages Not Loading (404 Errors)
+- Ensure `trailingSlash: true` is set in `next.config.js`
 - Verify the build output directory is set to `out`
-- Check `_redirects` file in the `out` directory
-- Ensure middleware warnings don't affect static export
+- Each route should have an `index.html` file inside its directory
+- Example: `/en/games/pixels/` should have `out/en/games/pixels/index.html`
+- The `_redirects` file should only redirect root to default locale
 
 ### Images Not Showing
 - Images are set to `unoptimized: true` in `next.config.js`

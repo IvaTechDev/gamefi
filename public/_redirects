@@ -1,7 +1,10 @@
 # Cloudflare Pages redirects for Next.js static export
 
-# Redirect root to /en (default locale)
-/  /ua  302
+# Redirect root to default locale
+/ /ua 302
 
-# Handle all routes through Next.js static files
-/*  /index.html  200
+# Redirect non-locale URLs to default locale (ua)
+/games /ua/games 302
+/games/* /ua/games/:splat 302
+/about /ua/about 302
+/buy_tokens /ua/buy_tokens 302

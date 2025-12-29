@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { Gamepad2, Users, Network, Wallet, ArrowRight, Sparkles } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { getAllGames } from '@/lib/data'
@@ -14,6 +15,8 @@ import { useStaggerAnimation } from '@/lib/animations/useStaggerAnimation'
 
 export default function HomePageClient() {
   const t = useTranslations()
+  const pathname = usePathname()
+  const locale = pathname.split('/')[1] || 'ua'
   const allGames = getAllGames()
   const featuredGames = getFeaturedGames(allGames, 6)
 
@@ -228,11 +231,11 @@ export default function HomePageClient() {
             ref={buttonsRef}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Link href="/games" className="btn-primary text-lg px-8 py-4 flex items-center gap-2">
+            <Link href={`/${locale}/games`} className="btn-primary text-lg px-8 py-4 flex items-center gap-2">
               <span>{t('hero.cta1')}</span>
               <ArrowRight className="w-5 h-5" />
             </Link>
-            <Link href="/#featured" className="btn-secondary text-lg px-8 py-4">
+            <Link href={`/${locale}#featured`} className="btn-secondary text-lg px-8 py-4">
               {t('hero.cta2')}
             </Link>
           </div>
@@ -301,7 +304,7 @@ export default function HomePageClient() {
               </div>
 
               <div ref={featuredButtonRef} className="text-center">
-                <Link href="/games" className="btn-secondary inline-flex items-center gap-2">
+                <Link href={`/${locale}/games`} className="btn-secondary inline-flex items-center gap-2">
                   <span>{t('featured.cta')}</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -325,7 +328,7 @@ export default function HomePageClient() {
             <p className="text-lg text-white/70 mb-8 max-w-2xl mx-auto">
               {t('cta.description')}
             </p>
-            <Link href="/games" className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2">
+            <Link href={`/${locale}/games`} className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2">
               <Gamepad2 className="w-5 h-5" />
               <span>{t('cta.button')}</span>
             </Link>

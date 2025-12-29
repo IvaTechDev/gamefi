@@ -24,8 +24,8 @@ export default function GameCard({ game, featured = false, priority = false }: G
   }
 
   return (
-    <Link 
-      href={`/games/${game.slug}`}
+    <Link
+      href={`/${locale}/games/${game.slug}`}
       className={`card-gamefi group block h-full ${featured ? 'border-glow-animation' : ''}`}
     >
       {/* Game Logo */}

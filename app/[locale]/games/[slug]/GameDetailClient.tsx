@@ -43,8 +43,8 @@ export default function GameDetailClient({ game }: GameDetailClientProps) {
   }
 
   const breadcrumbs = [
-    { label: 'Home', href: '/' },
-    { label: t('back'), href: '/games' },
+    { label: 'Home', href: `/${locale}` },
+    { label: t('back'), href: `/${locale}/games` },
     { label: game.name },
   ]
 
@@ -163,8 +163,8 @@ export default function GameDetailClient({ game }: GameDetailClientProps) {
               <h2 className="text-3xl font-heading font-bold">
                 {t('related')} <span className="gradient-text">Games</span>
               </h2>
-              <Link 
-                href="/games"
+              <Link
+                href={`/${locale}/games`}
                 className="text-sm font-mono text-bitcoin-orange hover:text-digital-gold flex items-center gap-1 transition-colors"
               >
                 <span>View All</span>

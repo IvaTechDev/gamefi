@@ -1,7 +1,13 @@
+'use client'
+
 import Link from 'next/link'
+import { useParams } from 'next/navigation'
 import { Home, Search } from 'lucide-react'
 
 export default function NotFound() {
+  const params = useParams()
+  const locale = (params.locale as string) || 'ua'
+  
   return (
     <div className="min-h-[600px] flex items-center justify-center px-4">
       <div className="text-center space-y-6 max-w-2xl">
@@ -23,14 +29,14 @@ export default function NotFound() {
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
           <Link
-            href="/"
+            href={`/${locale}`}
             className="btn-primary inline-flex items-center gap-2"
           >
             <Home className="w-5 h-5" />
             <span>Back to Home</span>
           </Link>
           <Link
-            href="/games"
+            href={`/${locale}/games`}
             className="btn-secondary inline-flex items-center gap-2"
           >
             <Search className="w-5 h-5" />

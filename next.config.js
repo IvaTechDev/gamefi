@@ -4,7 +4,8 @@ const withNextIntl = require('next-intl/plugin')(
 )
 
 const nextConfig = {
-  output: 'export', // Commented out for dev mode
+  output: 'export',
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },

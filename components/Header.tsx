@@ -11,16 +11,19 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const pathname = usePathname()
   const t = useTranslations('header')
+  
+  // Extract locale from pathname
+  const locale = pathname.split('/')[1] || 'ua'
 
   const navLinks = [
-    { label: t('nav.home'), href: '/' },
-    { label: t('nav.catalog'), href: '/games' },
-    { label: t('nav.about'), href: '/about' },
-    { label: t('nav.buy_tokens'), href: '/buy_tokens' },
+    { label: t('nav.home'), href: `/${locale}` },
+    { label: t('nav.catalog'), href: `/${locale}/games` },
+    { label: t('nav.about'), href: `/${locale}/about` },
+    { label: t('nav.buy_tokens'), href: `/${locale}/buy_tokens` },
   ]
 
   const isActive = (href: string) => {
-    if (href === '/') return pathname === '/'
+    if (href === `/${locale}`) return pathname === `/${locale}` || pathname === '/'
     return pathname.startsWith(href)
   }
 
@@ -29,7 +32,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href={`/${locale}`} className="flex items-center gap-2 group">
             <Gamepad2 className="w-8 h-8 text-bitcoin-orange group-hover:scale-110 transition-transform" />
             <span className="text-xl font-heading font-bold gradient-text">
               GameFI
@@ -57,7 +60,7 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-4">
             <LanguageSwitcher />
             <Link
-              href="/games"
+              href={`/${locale}/games`}
               className="btn-primary text-sm"
             >
               {t('cta')}
@@ -101,7 +104,7 @@ export default function Header() {
               <LanguageSwitcher />
             </div>
             <Link
-              href="/games"
+              href={`/${locale}/games`}
               onClick={() => setMobileMenuOpen(false)}
               className="block w-full text-center btn-primary"
             >
