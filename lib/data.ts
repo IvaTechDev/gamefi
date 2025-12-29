@@ -40,11 +40,11 @@ export function getAllGames(): Game[] {
   try {
     // Filter out invalid games
     const validGames = gamesData.filter(validateGame)
-    
+
     if (validGames.length < gamesData.length) {
       console.warn(`Filtered out ${gamesData.length - validGames.length} invalid games`)
     }
-    
+
     return validGames.map(addSlug)
   } catch (error) {
     console.error('Failed to load games:', error)

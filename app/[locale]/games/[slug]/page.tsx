@@ -14,13 +14,14 @@ export function generateStaticParams() {
   )
 }
 
-export async function generateMetadata({ 
-  params 
-}: { 
-  params: { slug: string; locale: string } 
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ slug: string; locale: string }>
 }): Promise<Metadata> {
-  const game = getGameBySlug(params.slug)
-  
+  const { slug } = await params
+  const game = getGameBySlug(slug)
+
   if (!game) {
     return {
       title: 'Game Not Found',
@@ -38,13 +39,14 @@ export async function generateMetadata({
   }
 }
 
-export default function GameDetailPage({ 
-  params 
-}: { 
-  params: { slug: string; locale: string } 
+export default async function GameDetailPage({
+  params
+}: {
+  params: Promise<{ slug: string; locale: string }>
 }) {
-  const game = getGameBySlug(params.slug)
-  
+  const { slug } = await params
+  const game = getGameBySlug(slug)
+
   if (!game) {
     notFound()
   }
