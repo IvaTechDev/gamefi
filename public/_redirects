@@ -1,0 +1,7 @@
+# Cloudflare Pages redirects for Next.js static export
+
+# Redirect root to /en (default locale)
+/  /ua  302
+
+# Handle all routes through Next.js static files
+/*  /index.html  200
