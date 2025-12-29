@@ -3,7 +3,7 @@
 ## Prerequisites
 - A Cloudflare account
 - Git repository connected to Cloudflare Pages
-- Node.js 18 or higher
+- Node.js 20.9.0 or higher (required by Next.js 16)
 
 ## Build Configuration
 
@@ -15,7 +15,7 @@ When setting up your Cloudflare Pages project, use these settings:
 ### Build Settings
 - **Build command**: `npm run build`
 - **Build output directory**: `out`
-- **Node version**: 18 (automatically detected from `.node-version`)
+- **Node version**: 20.9.0 (automatically detected from `.node-version`)
 
 ### Environment Variables
 No special environment variables are required for this static site.
@@ -94,7 +94,8 @@ The site includes:
 ## Troubleshooting
 
 ### Build Fails
-- Ensure Node.js version is 18 or higher
+- Ensure Node.js version is 20.9.0 or higher (required by Next.js 16)
+- Verify `.node-version` file contains `20.9.0`
 - Check `package.json` for dependency issues
 - Run `npm install` before building
 
