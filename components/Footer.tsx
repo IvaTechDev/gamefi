@@ -29,7 +29,7 @@ export default function Footer() {
               {tSite('description')}
             </p>
             
-            {/* Social Links */}
+            {/* Social Links
             <div className="flex items-center gap-3">
               <a
                 href={SOCIAL_LINKS.twitter}
@@ -68,6 +68,7 @@ export default function Footer() {
                 <Github className="w-5 h-5" />
               </a>
             </div>
+             */}
           </div>
 
           {/* Product Links */}
@@ -123,7 +124,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href={`/${locale}#how-it-works`}
+                  href={`/${locale}/how-it-works`}
                   className="text-sm text-white/60 hover:text-white transition-colors"
                 >
                   {t('how_it_works')}
@@ -131,7 +132,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href={`/${locale}#faq`}
+                  href={`/${locale}/faq`}
                   className="text-sm text-white/60 hover:text-white transition-colors"
                 >
                   {t('faq')}
