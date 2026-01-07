@@ -19,7 +19,7 @@ export default function Header() {
     { label: t('nav.home'), href: `/${locale}` },
     { label: t('nav.catalog'), href: `/${locale}/games` },
     { label: t('nav.about'), href: `/${locale}/about` },
-    { label: t('nav.buy_tokens'), href: `/${locale}/buy_tokens` },
+    { label: t('nav.buy_tokens'), href: `/${locale}/buy_gamefi_tokens` },
   ]
 
   const isActive = (href: string) => {
