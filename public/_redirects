@@ -6,4 +6,4 @@
 # Redirect non-locale URLs to default locale (ua)
 /games /ua/games 302
 /about /ua/about 302
-/buy_tokens /ua/buy_tokens 302
+/buy_gamefi_tokens /ua/buy_gamefi_tokens 302

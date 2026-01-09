@@ -116,7 +116,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href={`/${locale}/buy_tokens`}
+                  href={`/${locale}/buy_gamefi_tokens`}
                   className="text-sm text-white/60 hover:text-white transition-colors"
                 >
                   {t('buy_tokens')}
