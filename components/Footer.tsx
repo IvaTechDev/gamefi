@@ -12,7 +12,7 @@ export default function Footer() {
   const tSite = useTranslations('site')
   const pathname = usePathname()
   const locale = pathname.split('/')[1] || 'ua'
-  
+
   return (
     <footer className="bg-deep-space border-t border-white/10 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -28,7 +28,14 @@ export default function Footer() {
             <p className="text-sm text-white/60 leading-relaxed mb-6 max-w-sm">
               {tSite('description')}
             </p>
-            
+            <div className="flex items-center gap-2">
+              <a className="btn-primary text-lg px-4 py-2 inline-flex items-center gap-2" href="https://accounts.binance.com/register?ref=150978656" target="_blank">
+                <span><img src="/images/binance.svg" alt="Binance" width="120" height="24" /></span></a>
+              <a className="btn-primary text-lg px-4 py-2 inline-flex items-center gap-2" href="https://okx.com/join/60977984" target="_blank">
+                <span><img src="/images/okx.svg" alt="OKX" width="72" height="24" /></span></a>
+              <a className="btn-primary text-lg px-4 py-2 inline-flex items-center gap-2" href="https://www.bybit.com/invite?ref=7XGM31" target="_blank">
+                <span><img src="/images/bybit.svg" alt="Bybit" width="58" height="24" /></span></a>
+            </div>
             {/* Social Links
             <div className="flex items-center gap-3">
               <a
@@ -176,10 +183,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-sm text-white/40">
-            <p>© {new Date().getFullYear()} GameFI Catalog. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} GameFI Catalog. All rights reserved.| Email: <a className="text-white hover:text-white/80 transition-colors" href="mailto:game@gamefi.ua">game@gamefi.ua</a></p>
             <p className="text-xs mt-1">Not financial advice. Always DYOR.</p>
           </div>
-          
+
           <button
             onClick={() => scrollToTop()}
             className="flex items-center gap-2 text-sm text-white/60 hover:text-white transition-colors group"
