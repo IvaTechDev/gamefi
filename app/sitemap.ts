@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     sitemapEntries.push({
       url: `${baseUrl}/${locale}`,
       lastModified: new Date(),
-      changeFrequency: 'daily',
+      changeFrequency: 'monthly',
       priority: 1.0,
     })
     
@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     sitemapEntries.push({
       url: `${baseUrl}/${locale}/games`,
       lastModified: new Date(),
-      changeFrequency: 'daily',
+      changeFrequency: 'monthly',
       priority: 0.9,
     })
     
@@ -34,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       sitemapEntries.push({
         url: `${baseUrl}/${locale}/games/${game.slug}`,
         lastModified: new Date(),
-        changeFrequency: 'weekly',
+        changeFrequency: 'yearly',
         priority: 0.8,
       })
     })
@@ -44,7 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       sitemapEntries.push({
         url: `${baseUrl}/${locale}/${page.slug}`,
         lastModified: new Date(page.pubdate),
-        changeFrequency: 'monthly',
+        changeFrequency: 'yearly',
         priority: 0.7,
       })
     })
