@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   locales.forEach(locale => {
     // Home page for each locale
     sitemapEntries.push({
-      url: `${baseUrl}/${locale}`,
+      url: `${baseUrl}/${locale}/`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1.0,
@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     
     // Games catalog page for each locale
     sitemapEntries.push({
-      url: `${baseUrl}/${locale}/games`,
+      url: `${baseUrl}/${locale}/games/`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
@@ -32,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Individual game pages for each locale
     games.forEach(game => {
       sitemapEntries.push({
-        url: `${baseUrl}/${locale}/games/${game.slug}`,
+        url: `${baseUrl}/${locale}/games/${game.slug}/`,
         lastModified: new Date(),
         changeFrequency: 'yearly',
         priority: 0.8,
@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Static pages for each locale
     pages.forEach(page => {
       sitemapEntries.push({
-        url: `${baseUrl}/${locale}/${page.slug}`,
+        url: `${baseUrl}/${locale}/${page.slug}/`,
         lastModified: new Date(page.pubdate),
         changeFrequency: 'yearly',
         priority: 0.7,
