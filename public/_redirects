@@ -1,5 +1,9 @@
 # Cloudflare Pages redirects for Next.js static export
 
+# Exclude static files from locale redirects
+/ads.txt - -
+/robots.txt - -
+
 # Redirect root to default locale
 / /ua 302
 
