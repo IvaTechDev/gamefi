@@ -19,7 +19,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string; locale: string }>
 }): Promise<Metadata> {
-  const { slug } = await params
+  const { slug, locale } = await params
   const game = getGameBySlug(slug)
 
   if (!game) {
@@ -31,6 +31,9 @@ export async function generateMetadata({
   return {
     title: `${game.name} - GameFi Catalog`,
     description: game.short_description,
+    alternates: {
+      canonical: `https://gamefi.ua/${locale}/games/${slug}/`,
+    },
     openGraph: {
       title: game.name,
       description: game.short_description,

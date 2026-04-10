@@ -1,9 +1,19 @@
+import { Metadata } from 'next'
 import { getAllGames } from '@/lib/data'
 import { locales } from '@/i18n/request'
 import GamesPageClient from './GamesPageClient'
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return {
+    alternates: {
+      canonical: `https://gamefi.ua/${locale}/games/`,
+    },
+  }
 }
 
 export default async function GamesPage({ params }: { params: Promise<{ locale: string }> }) {

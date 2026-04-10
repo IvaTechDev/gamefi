@@ -42,6 +42,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title,
     description,
+    alternates: {
+      canonical: `https://gamefi.ua/${locale}/${slug}/`,
+    },
     openGraph: {
       title,
       description,
