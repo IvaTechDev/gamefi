@@ -7,6 +7,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     alternates: {
       canonical: `https://gamefi.ua/${locale}/`,
     },
+    openGraph: {
+      type: 'website',
+      url: `https://gamefi.ua/${locale}/`,
+      images: ['/og-image.png'],
+    },
   }
 }
 

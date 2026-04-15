@@ -46,6 +46,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: `https://gamefi.ua/${locale}/${slug}/`,
     },
     openGraph: {
+      type: 'article',
+      url: `https://gamefi.ua/${locale}/${slug}/`,
       title,
       description,
       images: [page.thumbnail],

@@ -35,6 +35,8 @@ export async function generateMetadata({
       canonical: `https://gamefi.ua/${locale}/games/${slug}/`,
     },
     openGraph: {
+      type: 'article',
+      url: `https://gamefi.ua/${locale}/games/${slug}/`,
       title: game.name,
       description: game.short_description,
       images: [game.logo],

@@ -13,6 +13,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     alternates: {
       canonical: `https://gamefi.ua/${locale}/games/`,
     },
+    openGraph: {
+      type: 'website',
+      url: `https://gamefi.ua/${locale}/games/`,
+      title: 'Games - GameFI Catalog',
+      images: ['/og-image.png'],
+    },
   }
 }
 
